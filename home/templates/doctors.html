@@ -1,0 +1,25 @@
+{% extends 'theme.html' %}
+
+{% block title %}
+   Our Doctors
+{% endblock  %}
+
+{% block content %}
+
+<h1 class="text-center" style="color:#99004d">Our Doctors</h1>
+<hr>
+<div class="container my-5 text-center">
+
+    {% for d in doctors %}
+    <div class="card text-center mx-7 my-3 bg-info" style="width: 18rem; display:inline-block;">
+        <img src={{d.doc_image.url}} class="card-img-top" style="height:200px;" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dr. {{d.doc_name}}</h5>
+          <p class="card-text">{{d.doc_spec}}</p>
+         <b><p class="card-text">{{d.doc_department}} Department</p></b>
+        </div>
+      </div>
+    {% endfor %}
+    
+</div>
+{% endblock content %}

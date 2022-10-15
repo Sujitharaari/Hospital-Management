@@ -1,0 +1,35 @@
+{% extends 'theme.html' %}
+
+{% block title %}
+    About
+{% endblock %}
+{% load static %}
+
+{% block content %}
+    
+
+    <div class="container my-5">
+    <div style="width:600px;">
+        <h6 class="text-left" style="color:#5a3797;">WELCOME TO POLO HOSPITAL</h6>
+        <h1 class="text-left" style="color:#c1337a;">About Polo Hospital</h1>
+        <p style="text-align: justify;">Polo Hospital holds the greatest heritage of 50 years in the field of health care services. Started in 1970 at Ernakulam as a 5-bedded clinic, has now become one of the leaders with an 49-bedded multi- storied speciality hospital! Over the years, we have been improving our facilities and services through various changes. The hospital now has highly advanced operation theatre, labour room, well-equipped ICU, and bed strength of 49. We adhere to international quality standards in all the services and facilities which are guided by an expert panel of doctors and paramedical staff. We do offer cashless treatment facilities by having tie-ups with major insurance companies and TPA’s . Kerala Government has recognized our Hospital for treatment of their employees in the department of General Surgery, Orthopedics and Gastroenterology.</p>
+        <p style="text-align: justify;">Our team of experts perform procedures including:</p>
+        
+        <ul>
+            <li>Joint Replacement</li>
+            <li>Sports Injury Surgeries and trauma surgeries</li>
+            <li>ENT surgeries</li>
+            <li>Cardiology / Laparoscopic / Gynecology / Surgical (General) / oncology surgeries</li>
+        </ul>
+      
+    </div>
+    <div style="float: right; margin-top: -500px; margin-right: -80px; width: 400px; line-height: 25px;">
+        <img src="{% static 'D.jpg' %}" alt="">
+        <h1 class="text-right" style="margin-right:100px; margin-top:20px; color:#5a3797;">Vision</h1>
+    <p>To provide quality affordable health care in the region</p>
+    <h1 class="text-right" style="margin-right:100px; margin-top:13px; color:#5a3797;">Mission</h1>
+    <p>To provide patients a comprehensive Treatment to cure them from sufferings with good infrastructure, technology and personal rapport.</p>
+    
+</div>
+
+{% endblock content %}
